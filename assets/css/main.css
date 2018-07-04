@@ -1,0 +1,508 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 3, 1-tools/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 9, 1-tools/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 13, 1-tools/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, 1-tools/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 37, 1-tools/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 42, 1-tools/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 47, 1-tools/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 51, 1-tools/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 56, 1-tools/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 60, 1-tools/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 65, 1-tools/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 69, 1-tools/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 74, 1-tools/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 79, 1-tools/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 83, 1-tools/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 91, 1-tools/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 95, 1-tools/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 99, 1-tools/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 103, 1-tools/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 107, 1-tools/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 111, 1-tools/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 117, 1-tools/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 121, 1-tools/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 129, 1-tools/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 139, 1-tools/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 143, 1-tools/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 148, 1-tools/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 156, 1-tools/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 161, 1-tools/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 167, 1-tools/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 171, 1-tools/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 177, 1-tools/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 182, 1-tools/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 189, 1-tools/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 194, 1-tools/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 200, 1-tools/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 205, 1-tools/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 209, 1-tools/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 213, 1-tools/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 218, 1-tools/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Segoe/Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Segoe/Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Segoe';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Segoe/Light.woff") format("woff");
+}
+/* line 1, 2-base/_body-element.sass */
+body {
+  background-color: white;
+  color: #fff;
+  font-family: "Segoe", sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+  overflow: hidden;
+  position: fixed;
+}
+/* line 11, 2-base/_body-element.sass */
+body * {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* line 1, 2-base/_buttons.sass */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+/* line 24, 2-base/_buttons.sass */
+.button:hover, .button:active, .button:focus,
+button:hover,
+button:active,
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="button"]:hover,
+input[type="button"]:active,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+/* line 1, 2-base/_links.sass */
+a {
+  color: #0074D9;
+  text-decoration: none;
+  outline: 0;
+}
+/* line 6, 2-base/_links.sass */
+a:hover, a:focus {
+  color: #40a6ff;
+}
+
+/* line 1, 2-base/_selection-colors.sass */
+::selection {
+  background: #FFF498;
+}
+
+/* line 4, 2-base/_selection-colors.sass */
+::-moz-selection {
+  background: #FFF498;
+}
+
+/* line 7, 2-base/_selection-colors.sass */
+img::selection {
+  background: transparent;
+}
+
+/* line 10, 2-base/_selection-colors.sass */
+img::-moz-selection {
+  background: transparent;
+}
+
+/* line 13, 2-base/_selection-colors.sass */
+body {
+  -webkit-tap-highlight-color: #FFF498;
+}
+
+/* line 1, 2-base/_typography.sass */
+h1 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* line 5, 2-base/_typography.sass */
+h2 {
+  font-size: 1.5em;
+  font-weight: 200;
+  margin: 0;
+}
+
+/* line 10, 2-base/_typography.sass */
+h3 {
+  font-size: 1em;
+  font-weight: 200;
+  margin: 0;
+}
+
+/* line 1, 3-modules/_header.sass */
+header {
+  text-align: center;
+}
+/* line 3, 3-modules/_header.sass */
+header .header__logo {
+  margin-top: 2.18em;
+  width: 7.3em;
+}
+
+/* line 2, 3-modules/_home-info.sass */
+.home__info .info__title--sm {
+  font-weight: 300;
+  line-height: 1.17;
+  margin-bottom: 0.56em;
+  text-align: center;
+  color: #ffffff;
+}
+/* line 8, 3-modules/_home-info.sass */
+.home__info .info__subtitle--sm {
+  opacity: 0.7;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.87);
+}
+/* line 13, 3-modules/_home-info.sass */
+.home__info .info__title--lg {
+  font-weight: 300;
+  line-height: 1.17;
+  margin-bottom: 0.56em;
+  text-align: center;
+  color: #ffffff;
+  visibility: hidden;
+  position: absolute;
+}
+/* line 20, 3-modules/_home-info.sass */
+.home__info .info__subtitle--lg {
+  opacity: 0.7;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.87);
+  visibility: hidden;
+  position: absolute;
+}
+
+/* line 1, 3-modules/_home-iphone-img.sass */
+.home__iphone-img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 11.5em;
+  margin-top: 1.18em;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 12, 3-modules/_home-iphone-img.sass */
+.home__iphone-img .iphones-final {
+  max-width: 70%;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* line 1, 3-modules/_home-send-input.sass */
+.home__send {
+  margin: 1.625em 0 3.625em;
+  display: flex;
+  justify-content: center;
+}
+/* line 6, 3-modules/_home-send-input.sass */
+.home__send .home__send__input {
+  border: none;
+  border-radius: 8px 0 0 8px;
+  height: 2.81em;
+  padding: 0.685em;
+  width: 11.75em;
+}
+/* line 12, 3-modules/_home-send-input.sass */
+.home__send .home__send__input::placeholder {
+  text-align: left;
+}
+/* line 15, 3-modules/_home-send-input.sass */
+.home__send .home__send__button {
+  background-color: #f05638;
+  border: none;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  height: 2.81rem;
+  font-size: 0.875em;
+  font-weight: 800;
+  letter-spacing: 2.8px;
+  padding: 0;
+  text-transform: uppercase;
+  width: 5.75rem;
+}
+
+/* line 2, 4-pages/_page-home.sass */
+.page-home {
+  background-image: -o-linear-gradient(to bottom, #243B71, #445CB8);
+  background-image: -moz-linear-gradient(to bottom, #243B71, #445CB8);
+  background-image: -webkit-linear-gradient(to bottom, #243B71, #445CB8);
+  background-image: linear-gradient(to bottom, #243B71, #445CB8);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 0.625em;
+}
+@media only screen and (min-width: 62em) {
+  /* line 2, 4-pages/_page-home.sass */
+  .page-home {
+    height: 82.7vh;
+    grid-template-columns: [phone-img-start] 51.5%  [phone-img-end info-start] 48.5% [info-end];
+  }
+}

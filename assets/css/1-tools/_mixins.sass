@@ -1,0 +1,19 @@
+@mixin linear-gradient-a($direction, $fromColor, $toColor)
+  background-image: -o-linear-gradient($direction, $fromColor, $toColor)
+  background-image: -moz-linear-gradient($direction, $fromColor, $toColor)
+  background-image: -webkit-linear-gradient($direction, $fromColor, $toColor)
+  background-image: linear-gradient($direction, $fromColor, $toColor)
+
+@mixin symmetric-gradient-a($direction, $fromColor, $toColor)
+  background-image: -o-linear-gradient($direction, $fromColor, $toColor, $fromColor)
+  background-image: -moz-linear-gradient($direction, $fromColor, $toColor, $fromColor)
+  background-image: -webkit-linear-gradient($direction, $fromColor, $toColor, $fromColor)
+  background-image: linear-gradient($direction, $fromColor, $toColor, $fromColor)
+
+@mixin hidden()
+  visibility: hidden
+  position: absolute
+
+@mixin visible()
+  visibility: visible
+  position: relative
