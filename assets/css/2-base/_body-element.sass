@@ -6,8 +6,11 @@ body
   line-height: 1.6
   overflow: hidden
   position: fixed
-  // -webkit-font-smoothing: antialiased
-  // -webkit-text-size-adjust: 100%
+  width: 100%
+  -webkit-font-smoothing: antialiased
+  text-size-adjust: 100%
   *
     box-sizing: border-box
     text-align: center
+    @media only screen and (min-width:$md)
+      text-align: left

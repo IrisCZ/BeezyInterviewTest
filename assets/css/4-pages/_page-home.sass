@@ -4,9 +4,28 @@
   align-items: center
   display: grid
   grid-template-columns: 1fr
+  -ms-grid-columns: 1fr
   height: 100vh
   justify-content: center
   padding: 0 .625em
+  /*To fix position in IE11*/
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    display: block
+    @media only screen and (min-width:$sm)
+      display: -ms-grid
+      -ms-grid-columns:  42.4%  57.6%
+      -ms-grid-rows: 26%  72.9%
+
+
   @media only screen and (min-width:$md)
+    @include linear-gradient-a(to right, $bg-blue-dark, $bg-blue)
+    grid-template-columns: unquote("[iphone-img-start] 42.4%  [iphone-img-end header-start info-start] 57.6% [header-end info-end]")
+    -ms-grid-columns:  42.4%  57.6%
+    grid-template-rows: unquote("[iphone-img-start header-start] 26%  [header-end info-start] 72.9% [info-end iphone-end]")
+    -ms-grid-rows: 26%  72.9%
+    padding: 0
+
+  @media only screen and (min-width:$lg)
     height: 82.7vh
-    grid-template-columns: unquote("[phone-img-start] 51.5%  [phone-img-end info-start] 48.5% [info-end]")
+    grid-template-rows: unquote("[iphone-img-start header-start] 38.8%  [header-end info-start] 61.2% [info-end iphone-end]")
+    -ms-grid-rows: 32.8%  72.9%

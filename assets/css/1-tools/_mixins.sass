@@ -11,9 +11,8 @@
   background-image: linear-gradient($direction, $fromColor, $toColor, $fromColor)
 
 @mixin hidden()
-  visibility: hidden
+  display: none
   position: absolute
 
 @mixin visible()
-  visibility: visible
-  position: relative
+  display: inherit

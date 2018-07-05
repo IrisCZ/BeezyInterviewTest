@@ -2,15 +2,32 @@
   margin: 1.625em 0 3.625em
   display: flex
   justify-content: center
+  @media only screen and (min-width:$sm)
+    margin-top: 2.5em
+    text-align: justify
+  /*To fix position center in IE11*/
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+    display: block
 
   .home__send__input
     border: none
     border-radius: 8px 0 0 8px
     height: 2.81em
     padding: .685em
+    vertical-align: middle
     width: 11.75em
     &::placeholder
+      color: #9fa3a7
       text-align: left
+      @media only screen and (min-width:$md)
+        font-size: 1.25rem
+
+    @media only screen and (min-width:$sm)
+      height: 3.43rem
+      padding: 1rem 0 1rem 1.5rem
+      width: 18.625rem
+
+
 
   .home__send__button
     background-color: $main-color
@@ -23,4 +40,8 @@
     letter-spacing: 2.8px
     padding: 0
     text-transform: uppercase
+    vertical-align: middle
     width: 5.75rem
+    @media only screen and (min-width:$sm)
+      height: 3.43rem
+      width: 7.625rem

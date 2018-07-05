@@ -1,14 +1,52 @@
 .home__iphone-img
-  // grid-column: phone-img-start / phone-img-end
   display: flex
   align-items: flex-end
-  justify-content: flex-end
+  justify-content: center
   height: 11.5em
   margin-top: 1.18em
   max-width: 100%
-  overflow: hidden
+  padding-left: 1.5em
   position: relative
+  @media only screen and (min-width:$sm)
+    height: 100%
+    margin-top: 0
+    -ms-grid-row: 1
+    -ms-grid-row-span: 2
+    -ms-grid-column: 1
+  @media only screen and (min-width:$md)
+    grid-column: iphone-img-start / iphone-img-end
+    grid-row: iphone-img-start / iphone-img-end
+    justify-content: flex-end
+  /*To fix position center os iphone in IE11*/
+  @media only screen and (min-width:$sm) and (max-width:$md)
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+      display: -ms-flexbox
+      align-items: center
 
   .iphones-final
     max-width: 70%
     @include hidden()
+    @media only screen and (min-width:$md)
+      top: 4.625em
+      @include visible()
+      /*To fix position center os iphone in IE11*/
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        max-height: 80%
+        right: 0
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+      @media screen and (min-width:$sm) and (max-width:$md)
+        @include visible()
+        height: auto
+        position: relative
+        width: 100%
+
+
+  .iphones-mobile
+    @include visible()
+    @media only screen and (min-width:$md)
+      @include hidden()
+    @media only screen and (min-width:$sm) and (max-width:$md)
+      width: 25em
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        @include hidden()
