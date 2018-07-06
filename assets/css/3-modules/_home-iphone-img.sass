@@ -1,5 +1,6 @@
 .home__iphone-img
   display: flex
+  display: -ms-flexbox
   align-items: flex-end
   justify-content: center
   height: 11.5em
@@ -20,27 +21,27 @@
   /*To fix position center os iphone in IE11*/
   @media only screen and (min-width:$sm) and (max-width:$md)
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-      display: -ms-flexbox
       align-items: center
 
   .iphones-final
     max-width: 70%
     @include hidden()
-    @media only screen and (min-width:$md)
-      top: 4.625em
-      @include visible()
-      /*To fix position center os iphone in IE11*/
+    @media screen and (min-width:$sm) and (max-width:$md)
+      /*makes visble iphones big image in tablets in IE11*/
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-        max-height: 80%
-        right: 0
-
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-      @media screen and (min-width:$sm) and (max-width:$md)
         @include visible()
         height: auto
         position: relative
         width: 100%
-
+    @media only screen and (min-width:$md)
+      top: 4.625em
+      @include visible()
+      /*To fix iphone's img position center in IE11*/
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+        @media only screen and (min-width:$md) and (max-width:$lg)
+          max-height: 80%
+        @media only screen and (min-width:$md)
+        right: 0
 
   .iphones-mobile
     @include visible()
@@ -48,5 +49,6 @@
       @include hidden()
     @media only screen and (min-width:$sm) and (max-width:$md)
       width: 25em
+      /*hides iphones sm image in tablets in IE11*/
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
         @include hidden()

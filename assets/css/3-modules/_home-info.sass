@@ -1,6 +1,8 @@
 .home__info
   align-items: stretch
   display: flex
+  display: -ms-flexbox
+  flex: 1
   flex-direction: column
   margin-top: 1.375em
   @media only screen and (min-width:$sm)
@@ -13,13 +15,6 @@
     margin: 1.5rem 21.715% 0 14.875%
     grid-column: info-start / info-end
     grid-row: info-start / info-end
-  /*To fix position center os iphone in IE11*/
-  @media only screen and (min-width:$sm)
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-      display: block
-  @media only screen and (min-width:$md)
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
-      margin: 1.5rem 15% 0 10%
 
   .info__title--sm
     font-family: 'Segoe Light'
