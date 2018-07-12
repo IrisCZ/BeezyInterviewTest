@@ -3,8 +3,8 @@
   @include linear-gradient-a(to bottom, $bg-blue-dark, $bg-blue)
   align-items: center
   display: grid
-  grid-template-columns: 1fr
   -ms-grid-columns: 1fr
+  grid-template-columns: 1fr
   height: 100vh
   justify-content: center
   padding: 0 rem(10)
@@ -14,19 +14,19 @@
     display: block
     @media only screen and (min-width:$sm)
       display: -ms-grid
-      -ms-grid-columns:  42.4%  57.6%
-      -ms-grid-rows: 26%  72.9%
+      -ms-grid-columns:  43%  57%
+      -ms-grid-rows: 26%  74%
 
 
   @media only screen and (min-width:$md)
     @include linear-gradient-a(to right, $bg-blue-dark, $bg-blue)
-    grid-template-columns: unquote("[iphone-img-start] 42.4%  [iphone-img-end header-start info-start] 57.6% [header-end info-end]")
-    -ms-grid-columns:  42.4%  57.6%
-    grid-template-rows: unquote("[iphone-img-start header-start] 26%  [header-end info-start] 72.9% [info-end iphone-end]")
-    -ms-grid-rows: 26%  72.9%
+    grid-template-columns: unquote("[iphone-img-start] 43%  [iphone-img-end header-start info-start] 57% [header-end info-end]")
+    -ms-grid-columns:  43%  57%
+    grid-template-rows: unquote("[iphone-img-start header-start] 26%  [header-end info-start] 74% [info-end iphone-end]")
+    -ms-grid-rows: 26%  74%
     padding: 0
 
   @media only screen and (min-width:$lg)
     height: 82.7vh
-    grid-template-rows: unquote("[iphone-img-start header-start] 30%  [header-end info-start] 59% [info-end iphone-end]")
-    -ms-grid-rows: 32.8%  72.9%
+    grid-template-rows: unquote("[iphone-img-start header-start] 35%  [header-end info-start] 65% [info-end iphone-end]")
+    -ms-grid-rows: 35%  65%

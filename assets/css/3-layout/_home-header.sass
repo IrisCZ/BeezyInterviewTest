@@ -4,21 +4,21 @@
   @media only screen and (min-width:$sm)
     -ms-grid-column: 2
     -ms-grid-row: 1
-    
+
   @media only screen and (min-width:$md)
     align-items: flex-end
     display: flex
     height: 100%
     grid-column: header-start / header-end
     grid-row: header-start / header-end
-    margin: 0 21.715% 0 14.875%
+    margin: 0 rem(348) 0 rem(126)
 
   .header__logo
-    margin-top: 2.18em
-    width: 7.3em
+    margin-top: rem(35)
+    width: rem(117)
     @media only screen and (min-width:$sm)
       margin-top: 0
-      width: 11.437em
+      width: rem(183)
 
   .home__rs
     @include hidden()
@@ -26,7 +26,7 @@
     @media only screen and (min-width:$md)
       @include visible()
       position: absolute
-      top: 2.5em
-      right: 2.5em
+      top: rem(40)
+      right: rem(40)
       &:first-child
-        margin-right: .625rem
+        margin-right: rem(10)
