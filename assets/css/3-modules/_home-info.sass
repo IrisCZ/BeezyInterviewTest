@@ -18,7 +18,7 @@
 
   .info__title--sm
     font-family: 'Segoe Light'
-    font-size: 1.5em
+    @include font-size(24)
     font-weight: 300
     line-height: 1.17
     margin-bottom: .56em
@@ -30,7 +30,7 @@
   .info__subtitle--sm
     color: rgba(255, 255, 255, 0.87)
     font-family: 'Segoe Light'
-    font-size: 1em
+    @include font-size(16)
     line-height: 1.5
     opacity: 0.7
     width: 100%
@@ -67,7 +67,7 @@
     @media only screen and (min-width:$sm)
       @include visible
       color: rgba(255, 255, 255, 0.87)
-      font-size: 1.5em
+      @include font-size(24)
       opacity: 0.7
       position: relative
       width: 100%
