@@ -10,14 +10,19 @@
   background-image: -webkit-linear-gradient($direction, $fromColor, $toColor, $fromColor)
   background-image: linear-gradient($direction, $fromColor, $toColor, $fromColor)
 
-@mixin font-size($sizeValue: 1.6)
-  font-size: ($sizeValue * 10) + px
-  font-size: $sizeValue + rem
-
-
 @mixin hidden()
   display: none
   position: absolute
 
 @mixin visible()
   display: inherit
+
+$baseFontSize : 16
+@function rem($pixels, $context: $baseFontSize)
+  @if (unitless($pixels))
+    $pixels: $pixels * 1px
+
+  @if (unitless($context))
+    $context: $context * 1px
+
+  @return $pixels / $context * 1rem

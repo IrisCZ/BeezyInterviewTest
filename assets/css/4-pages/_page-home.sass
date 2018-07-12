@@ -7,8 +7,8 @@
   -ms-grid-columns: 1fr
   height: 100vh
   justify-content: center
-  padding: 0 .625em
-  
+  padding: 0 rem(10)
+
   /*To fix position in IE11*/
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
     display: block
@@ -28,5 +28,5 @@
 
   @media only screen and (min-width:$lg)
     height: 82.7vh
-    grid-template-rows: unquote("[iphone-img-start header-start] 38.8%  [header-end info-start] 61.2% [info-end iphone-end]")
+    grid-template-rows: unquote("[iphone-img-start header-start] 30%  [header-end info-start] 59% [info-end iphone-end]")
     -ms-grid-rows: 32.8%  72.9%
